@@ -28,20 +28,20 @@ def join_string(string_1, string_2)
 end
 
 def add_string_as_number(string_1, string_2)
-  result = string_1.to_i + string_2.to_i
+  return string_1.to_i + string_2.to_i
 end
 
 
 
 def number_to_full_month_name(res)
   if res == 1
-    result = "January"
+    return "January"
   elsif
     res == 3
-     result = "March"
+     return "March"
   else
     res == 9
-      result = "September"
+      return "September"
   end
 end
 
@@ -73,5 +73,6 @@ end
 
 
 def fahrenheit_to_celsius(f)
-  result = ((f-32)*5)/9
+  result = ((f-32)*5.0)/9
+  return result.round(5)
 end
