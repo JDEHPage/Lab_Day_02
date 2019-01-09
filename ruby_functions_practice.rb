@@ -82,8 +82,8 @@ def volume_of_cube(length_of_side)
 end
 
 
-def volume_of_sphere(r)
-  result = (1.33)* (3.14)* (r**3)
+def volume_of_sphere(radius)
+  result = (1.33)* (3.14)* (radius**3)
   return result.round(5)
 end
 
